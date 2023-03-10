@@ -1,0 +1,6 @@
+<p>rfc works!</p>
+<form [formGroup]="myform" >
+    <input type="text"  placeholder="username" formControlName="uname">
+    <input type="text" placeholder="password" formControlName="pass">
+    <div *ngIf="uname && uname.invalid">Eneter the name</div>
+</form>
