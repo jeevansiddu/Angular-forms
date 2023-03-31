@@ -1,0 +1,7 @@
+<p>sfc works!</p>
+<form (submit)="OnSubmit()">
+    <input type="text" name="username"  [(ngModel)]="uname">
+    <input type="text" name="password" value="{{pass}}" [(ngModel)]="pass">
+    <button>Login</button>
+</form>
+<p>{{uname}} {{pass}}</p>

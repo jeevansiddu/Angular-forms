@@ -1,0 +1,9 @@
+<p></p>
+<h1>Reactive forms example</h1>
+<form [formGroup]="myform" (submit)="onSub()">
+    <input type="text"  placeholder="username" formControlName="uname" required><br><br>
+    <div *ngIf="uname && uname.invalid" style="color:red">Enter the name</div>
+    <input type="text" placeholder="password" formControlName="pass" required><br><br>
+    <div *ngIf="pass && pass.invalid" style="color:red">Enter the password</div>
+    <input type="submit" value="login">
+</form>
